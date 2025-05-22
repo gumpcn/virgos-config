@@ -1,5 +1,26 @@
 server:
   port: 9000
+  compression:
+    enabled: true
+spring:
+  servlet:
+    multipart:
+      max-file-size: 10MB
+      max-request-size: 10MB
+  jackson:
+    default-property-inclusion: non_null
+    serialization:
+      write-enums-using-index: true
+      write-enum-keys-using-index: true
+  flyway:
+    table: schema_history
+    locations: classpath:virgos/core/migration
+mybatis:
+  configuration:
+    map-underscore-to-camel-case: true
+  mapper-locations:
+    - classpath:virgos/common/mapper/**/*.xml
+    - classpath:virgos/core/mapper/**/*.xml
 management:
   endpoints:
     web:
