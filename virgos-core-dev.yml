@@ -1,5 +1,5 @@
 virgos:
   captcha:
-    secret-key: tp6rUZmgcJQWTjN0apNJQk3wdeMpxM9m
+    secret-key: '{cipher}dde9e6d304139051499750ee25bf232e7f32415916d550ad7718d6658cdcdf1aa847b091c15b35429c20943db48b83b3028f49cdcdd8b1040d027ae930613b97'
     length: 4
     active-minutes: 5
