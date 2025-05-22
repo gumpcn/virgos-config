@@ -1,3 +1,10 @@
+spring:
+  datasource:
+    url: jdbc:mariadb://localhost:3306/virgos?useUnicode=true&characterEncoding=utf8&useSSL=false&createDatabaseIfNotExist=true
+    username: root
+    password: '{cipher}b549e688aec38bc03925164ccc69f2bafec39b16580e97cb7ca49f82672c9d8d'
+  flyway:
+    enabled: true
 virgos:
   captcha:
     secret-key: '{cipher}eba7c2be1e8125e1a18d64fa8e1aacf155a1dc917eaadf230e8a6d497cbc38765d69741ade3d1a715f7127fb909f48c8064a432262fe70a4641f9104c2d1d853'
